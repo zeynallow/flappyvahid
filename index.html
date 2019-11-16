@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flappy Vahid</title>
+  <style media="screen">
+  body{
+    background-color: #1b1b1b;
+  }
+  #start{
+    position: absolute;
+    top: 100px;
+    left:100px;
+  }
+  canvas{
+    background-color:#89e68b;
+    margin: 0 auto;
+  }
+  .wrap{
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+
+    <img width="100" id="start" onclick="draw();" src="images/start.png" alt="">
+
+    <canvas ontouchstart="moveUp(event)" id="canvas" width="288" height="512"></canvas>
+  </div>
+
+  <script src="flappyVahid.js"></script>
+</body>
+</html>
